@@ -15,8 +15,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="#9a71e6e4"
+        android:background="#9a8afffd"
         android:hint="0"
+        android:textColorHighlight="@color/colorPrimaryDark"
         android:cursorVisible="true"
         android:ems="10"
         android:nestedScrollingEnabled="false"
@@ -31,7 +32,7 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="24dp"
         android:layout_above="@+id/B7"
         android:layout_alignLeft="@+id/B7"
         android:layout_alignStart="@+id/B7"
@@ -41,7 +42,7 @@
         android:id="@+id/Bmod"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="25dp"
         android:layout_above="@+id/B8"
         android:layout_alignLeft="@+id/B8"
         android:layout_alignStart="@+id/B8"
@@ -51,7 +52,7 @@
         android:id="@+id/Bdel"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="20dp"
         android:layout_above="@+id/B9"
         android:layout_alignLeft="@+id/B9"
         android:layout_alignStart="@+id/B9"
@@ -62,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="70dp"
 
-
+        android:textSize="25dp"
         android:layout_above="@+id/Bmul"
         android:layout_alignLeft="@+id/Bmul"
         android:layout_alignStart="@+id/Bmul"
@@ -105,7 +106,7 @@
         android:id="@+id/Bmul"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="25dp"
         android:layout_above="@+id/Bsub"
         android:layout_alignLeft="@+id/Bsub"
         android:layout_alignStart="@+id/Bsub"
@@ -145,7 +146,7 @@
         android:id="@+id/Bsub"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="25dp"
         android:layout_above="@+id/Badd"
         android:layout_toEndOf="@+id/Bdot"
         android:layout_toRightOf="@+id/Bdot"
@@ -186,7 +187,7 @@
         android:id="@+id/Badd"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="25dp"
         android:layout_above="@+id/Bans"
         android:layout_alignLeft="@+id/Bans"
         android:layout_alignStart="@+id/Bans"
@@ -197,7 +198,7 @@
         android:layout_width="wrap_content"
         android:layout_height="70dp"
 
-
+        android:textSize="20dp"
         android:layout_alignBottom="@+id/B0"
         android:layout_marginEnd="13dp"
         android:layout_marginRight="13dp"
@@ -222,7 +223,7 @@
         android:id="@+id/Bdot"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
+        android:textSize="28dp"
 
         android:layout_alignBottom="@+id/Bans"
         android:layout_marginEnd="13dp"
@@ -236,7 +237,7 @@
         android:layout_width="wrap_content"
         android:layout_height="70dp"
 
-
+        android:textSize="25dp"
         android:layout_alignBottom="@+id/linearLayout2"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"

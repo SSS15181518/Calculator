@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
         Bmod = (Button) findViewById(R.id.Bmod);
         Ans = (TextView) findViewById(R.id.Ans);
 
+
+        Ans.setText(null);
+
+
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
