@@ -1,12 +1,17 @@
 package com.getmycalc.sss.calculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.os.Vibrator;
+import android.widget.Toast;
 
+import java.lang.*;
 public class MainActivity extends AppCompatActivity {
     Button B1,B2,B3,B4,B5,B6,B7,B8,B9,B0,B00,Bdot,Badd,Bsub,Bmul,Bdiv,Bmod,Bans,Bc,Bdel;
     TextView Ans;
@@ -14,6 +19,29 @@ public class MainActivity extends AppCompatActivity {
     int soli;
     boolean add,sub,mul,div,mod,c;
     private Vibrator myVib;
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id = item.getItemId();
+
+        if (id == R.id.about)
+        {
+            Intent intent = new Intent(getApplication(),About.class);
+            startActivity(intent);
+
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -141,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
         Badd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Ans.setHint(null);
                 var1 = Double.parseDouble(Ans.getText()+"");
                 add = true;
                 Ans.setText(null);
@@ -151,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
         Bsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Ans.setHint(null);
                 var1 = Double.parseDouble(Ans.getText()+"");
                 sub = true;
                 Ans.setText(null);
@@ -161,6 +191,7 @@ public class MainActivity extends AppCompatActivity {
         Bmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Ans.setHint(null);
                 var1 = Double.parseDouble(Ans.getText()+"");
                 mul = true;
                 Ans.setText(null);
@@ -171,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
         Bdiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Ans.setHint(null);
                 var1 = Double.parseDouble(Ans.getText()+"");
                 div = true;
                 Ans.setText(null);
@@ -193,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
         Bmod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Ans.setHint(null);
                 var1 = Double.parseDouble(Ans.getText()+"");
                 mod = true;
                 Ans.setText(null);
@@ -214,6 +247,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 myVib.vibrate(50);
                 var2 = Double.parseDouble(Ans.getText()+"");
+
+
                 if(add == true)
                 {
                     sol = var1 + var2;
@@ -228,6 +263,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                     add = false;
                 }
+
+
+
                 if(sub == true)
                 {
                     sol = var1 - var2;
@@ -295,4 +333,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+
+
 }
+

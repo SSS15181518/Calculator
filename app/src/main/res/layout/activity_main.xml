@@ -236,7 +236,6 @@
         android:id="@+id/Bans"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-
         android:textSize="25dp"
         android:layout_alignBottom="@+id/linearLayout2"
         android:layout_alignParentEnd="true"
