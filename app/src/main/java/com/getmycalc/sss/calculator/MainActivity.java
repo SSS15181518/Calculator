@@ -15,7 +15,7 @@ import java.lang.*;
 public class MainActivity extends AppCompatActivity {
     Button B1,B2,B3,B4,B5,B6,B7,B8,B9,B0,B00,Bdot,Badd,Bsub,Bmul,Bdiv,Bmod,Bans,Bc,Bdel;
     TextView Ans;
-    double var1,var2,sol;
+    double var1=0,var2,sol;
     int soli;
     boolean add,sub,mul,div,mod,c;
     private Vibrator myVib;
